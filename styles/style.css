@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f7f8;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 420px;
+    background-color: rgb(24 24 27);
+    background-image: url(/img/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.Logo {
+    width: 132px;
+    height: 132px;
+    border-radius: 100%;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.5);
+    transition-duration: 200ms;
+}
+
+.Logo:hover {
+    scale: 1.1;
+}
+
+.texto-principal-header {
+    font-size: 40px;
+    line-height: 36px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-weight: 800;
+    color: white;
+}
+
+.header-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.endereço {
+    color: white;
+    font-weight: 500;
+}
+
+.DiasAberto {
+    background-color: rgb(2, 175, 2);
+    padding: 4px 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.OsDias {
+    color: white;
+    font-weight: 500;
+}
+
+/* FIM DO HEADER */
+
+/* MENU */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 60px;
+}
+
+.texto-principal-menu {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 24px;
+}
+
+.Produtos-Content {
+    display: flex;
+    gap: 8px;
+}
+
+.imagem-produtos {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+    transition-duration: 200ms;
+}
+
+.imagem-produtos:hover {
+    scale: 1.1;
+
+}
+
+.Nome-Hamburguer {
+    font-weight: 700;
+}
+
+.Sobre-Hamburguer {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.Preco-Botao {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.Preco-Botao i {
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+}
+
+.Preco-Botao button {
+    background-color: rgb(18, 18, 18);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Preco-Botao p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+/* Bebidas */
+.texto-principal-bebidas {
+    max-width: 1280px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.texto-principal-bebidas h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 255px;
+    margin-top: 36px;
+    margin-bottom: 24px;
+}
+
+.Main-Bebidas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 60px;
+}
+
+.descricao {
+    width: 100%;
+}
+
+.Bebidas-Content {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+/* Fim das Bebidas */
+
+/* FIM DO MENU */
+
+/* FOOTER */
+
+footer button {
+    width: 100%;
+    background-color: rgb(237, 15, 15);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 40;
+    color: white;
+    gap: 8px;
+    font-weight: 700;
+}
+
+footer i {
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+}
+
+/* FIM DO FOOTER */
+
+/* MODELO CART */
+.modal-cart {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0 0 0 / 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.modal-itens {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    min-width: 600px;
+}
+
+.titulo-carrinho {
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+#cart-itens {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    flex-direction: column;
+}
+
+.cart-itens-p {
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.cart-itens-input {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px;
+    margin-top: 4px;
+}
+
+#address-warn {
+    color: rgb(237, 15, 15);
+    display: none;
+}
+
+.Final-cart {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#fechar-modelo-botao {
+    font-weight: 500;
+    padding-inline: 8px;
+    padding-block: 4px;
+    margin-top: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#checkout-botao {
+    background-color: rgb(2, 175, 2);
+    color: white;
+    font-weight: 500;
+    padding-inline: 8px;
+    padding-block: 4px;
+    margin-top: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/* FIM DO MODELO CART */
+
+/* Atualizar o cart pelo Js */
+.Cart-Js {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    flex-direction: column;
+}
+
+.Div-AtualizacaoCartModal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Name-AtualizacaoCartModal{
+   font-weight:bold; 
+}
+
+.Preco-AtualizacaoCartModal{
+font-weight: 500;
+margin-top: 8px;
+}
+
+.Remove-botao-Cart{
+    border:none;
+    cursor: pointer;
+}
+
+.Remove-botao-Cart:hover{
+border-bottom: 2px solid #ff3c3c ;
+}
+
+
+
+
+
+/* MOBILE */
+@media(max-width:768px) {
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .modal-itens {
+        background-color: white;
+        padding: 20px;
+        border-radius: 6px;
+        min-width: 90%;
+    }
+
+    .Main-Bebidas {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+}
+
+
+
+/* FIM DO MOBILE */

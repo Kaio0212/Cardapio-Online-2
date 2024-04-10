@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Css -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Cardapio Burguer</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+
+    <div class="header-content">
+      <!-- Logo -->
+      <img class="Logo" src="./img/hamb-1.png" alt="logo burguer">
+      <!-- Fim da logo -->
+
+      <!-- titulo e endereço da hamburgueria -->
+      <h1 class="texto-principal-header">Kakitu Burguer</h1>
+
+      <span class="endereço">Rua kakitu 10,centro, fortaleza</span>
+      <!-- Fim do titulo e endereço da hamburgueria -->
+
+      <!-- Dias que vai estar aberto o comércio -->
+      <div class="DiasAberto" id="data-span">
+        <span class="OsDias"> Seg á Dom - 18:00 as 22:00</span>
+      </div>
+      <!-- Fim do Dias que vai estar aberto o comércio -->
+
+    </div>
+  </header>
+  <!-- FIM DO HEADER -->
+
+  <!-- TITULO DO MENU -->
+  <h2 class="texto-principal-menu">Conheça o nosso menu</h2>
+  <!-- FIM DO TITULO DO MENU -->
+
+  <!-- MENU -->
+  <div id="menu">
+
+    <main>
+      <!-- Os Produtos -->
+      <!-- Produto 1 -->
+      <div class="Produtos-Content">
+        <img class="imagem-produtos" src="./img/hamb-1.png" alt="hambuguer Smash">
+
+        <div class="descricao">
+          <p class="Nome-Hamburguer"> Hambuguer Smash</p>
+          <p class="Sobre-Hamburguer"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e
+            maionese
+            da casa</p>
+
+          <div class="Preco-Botao">
+
+            <p>R$18.90</p>
+
+            <button class="add-cart-botao" data-name="Hambuguer Smash" data-preco="18.90">
+              <i class=" fa fa-cart-plus"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- fim do produto 1 -->
+      <!-- Produto 2 -->
+      <div class="Produtos-Content">
+        <img class="imagem-produtos" src="./img/hamb-2.png" alt="hambuguer Duplo">
+
+
+        <div class="descricao">
+          <p class="Nome-Hamburguer"> Hambuguer Duplo</p>
+          <p class="Sobre-Hamburguer"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e
+            maionese
+            da casa</p>
+
+          <div class="Preco-Botao">
+
+            <p>R$32.90</p>
+
+            <button class="add-cart-botao" data-name="Hambuguer Duplo" data-preco="32.90">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- fim do produto 2 -->
+      <!-- produto 3 -->
+      <div class="Produtos-Content">
+        <img class="imagem-produtos" src="./img/hamb-3.png" alt="hambuguer Salad">
+
+
+        <div class="descricao">
+          <p class="Nome-Hamburguer"> Hambuguer Salad</p>
+          <p class="Sobre-Hamburguer"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e
+            maionese
+            da casa</p>
+
+          <div class="Preco-Botao">
+
+            <p>R$35.90</p>
+
+            <button class="add-cart-botao" data-name="Hambuguer Salad" data-preco="35.90">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- fim do produto 3 -->
+      <!-- Produto 4 -->
+      <div class="Produtos-Content">
+        <img class="imagem-produtos" src="./img/hamb-4.png" alt="hambuguer da casa">
+
+
+        <div class="descricao">
+          <p class="Nome-Hamburguer"> Hambuguer da casa</p>
+          <p class="Sobre-Hamburguer"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e
+            maionese
+            da casa</p>
+
+          <div class="Preco-Botao">
+
+            <p>R$39.90</p>
+
+            <button class="add-cart-botao" data-name="Hambuguer da casa" data-preco="39.90">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- fim do produto 4 -->
+      <!-- Produto 5 -->
+      <div class="Produtos-Content">
+        <img class="imagem-produtos" src="./img/hamb-5.png" alt="hambuguer de queijo">
+
+
+        <div class="descricao">
+          <p class="Nome-Hamburguer"> Hambuguer de queijo</p>
+          <p class="Sobre-Hamburguer"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e
+            maionese
+            da casa</p>
+
+          <div class="Preco-Botao">
+
+            <p>R$30.90</p>
+
+            <button class="add-cart-botao" data-name="Hambuguer de queijo" data-preco="30.90">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- fim do produto 5 -->
+      <!-- Produto 6 -->
+      <div class="Produtos-Content">
+        <img class="imagem-produtos" src="./img/hamb-6.png" alt="hambuguer de bacon">
+
+
+        <div class="descricao">
+          <p class="Nome-Hamburguer"> Hambuguer de bacon</p>
+          <p class="Sobre-Hamburguer"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e
+            maionese
+            da casa</p>
+
+          <div class="Preco-Botao">
+
+            <p>R$42.90</p>
+
+            <button class="add-cart-botao" data-name="Hambuguer de bacon" data-preco="42.90">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- fim do produto 6 -->
+      <!-- Produto 7 -->
+      <div class="Produtos-Content">
+        <img class="imagem-produtos" src="./img/hamb-7.png" alt="hambuguer de queijo">
+
+
+        <div class="descricao">
+          <p class="Nome-Hamburguer"> Hambuguer de queijo</p>
+          <p class="Sobre-Hamburguer"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e
+            maionese
+            da casa</p>
+
+          <div class="Preco-Botao">
+
+            <p>R$30.90</p>
+
+            <button class="add-cart-botao" data-name="Hambuguer de queijo" data-preco="30.90">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- fim do produto 7 -->
+      <!-- Produto 8 -->
+      <div class="Produtos-Content">
+        <img class="imagem-produtos" src="./img/hamb-4.png" alt="hambuguer de bacon">
+
+
+        <div class="descricao">
+          <p class="Nome-Hamburguer"> Hambuguer de bacon</p>
+          <p class="Sobre-Hamburguer"> Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e
+            maionese
+            da casa</p>
+
+          <div class="Preco-Botao">
+
+            <p>R$42.90</p>
+
+            <button class="add-cart-botao" data-name="Hambuguer de bacon" data-preco="42.90">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- fim do produto 8 -->
+      <!-- Fim dos Produtos -->
+    </main>
+
+    <!-- TITULO DAS BEBIDAS -->
+    <div class="texto-principal-bebidas">
+      <h2>Bebidas</h2>
+    </div>
+    <!-- FIM DO TITULO DAS BEBIDAS -->
+
+    <!-- Grid Bebidas -->
+    <div class="Main-Bebidas" id="menu">
+
+      <!-- Bebida 1 -->
+      <div class="Bebidas-Content">
+        <img class="imagem-produtos" src="./img/refri-1.png" alt="Cola-Cola">
+
+
+        <div class="descricao">
+          <p class="Nome-Hamburguer"> Cola-Cola</p>
+
+          <div class="Preco-Botao">
+
+            <p>R$6.00</p>
+
+            <button class="add-cart-botao" data-name="Cola-Cola" data-preco="6.00">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- fim da bebida 1 -->
+      <!-- Bebida 2 -->
+      <div class="Bebidas-Content">
+        <img class="imagem-produtos" src="./img/refri-2.png" alt="Guaraná">
+
+
+        <div class="descricao">
+          <p class="Nome-Hamburguer">Guaraná</p>
+
+          <div class="Preco-Botao">
+
+            <p>R$6.00</p>
+
+            <button class="add-cart-botao" data-name="Guaraná" data-preco="6.00">
+              <i class="fa fa-cart-plus"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- Fim da bebida 2 -->
+    </div>
+    <!-- Fim do Grid Bebidas -->
+
+  </div>
+  <!-- FIM DO MENU -->
+
+  <!-- MODELO CART -->
+  <div class="modal-cart" id="Modal-cart">
+    <div class="modal-itens">
+
+      <h2 class="titulo-carrinho">Meu carrinho</h2>
+
+      <div id="cart-itens"></div>
+
+        <p class="cart-itens-p">Total: <span id="cart-total">0.00</span> </p>
+
+        <p>Endereço de entrega:</p>
+
+        <input type="text" placeholder="Digite seu endereço completo" class="cart-itens-input" id="address" />
+        <!-- address é endereço em inglês -->
+
+        <p id="address-warn">Digite seu endereço completo!</p><!-- vai avisar quando o endereço estiver errado -->
+
+        <!-- Final do carrinho -->
+        <div class="Final-cart">
+
+          <button id="fechar-modelo-botao">Fechar</button>
+
+          <button id="checkout-botao">Finalizar pedido</button>
+        </div>
+
+
+    </div>
+  </div>
+  <!-- FIM DO MODELO CART -->
+
+
+
+  <!-- BOTAO DO CARRINHO NO FOOTER -->
+  <footer class="footer">
+
+    <button id="cart-botao">
+      (<span id="cart-count">0</span>)
+      Veja seu carrinho
+      <i class="fa fa-cart-plus"></i>
+    </button>
+
+  </footer>
+  <!--  FIM DO BOTAO DO CARRINHO NO FOOTER -->
+
+  <script src="./script.js"></script>
+
+</body>
+
+
+
+</html>
